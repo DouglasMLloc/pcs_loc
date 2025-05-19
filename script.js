@@ -1,5 +1,5 @@
 const inventoryTableBody = document.getElementById('inventory-table-body');
-const apiUrl = 'https://script.google.com/a/macros/oceanica.ufrj.br/s/AKfycby-QW0MfV6WD87BPTCopriikxpAIKT2AUci9erCzP07XhkoKVjcwHCKLU00HEASK5c3/exec'; // Substitua pela URL do seu aplicativo da web do Apps Script
+const apiUrl = 'https://script.google.com/a/macros/oceanica.ufrj.br/s/AKfycbx8rWQNoKvWa9FKFsZd1KUS5FQdrN9vRbKfW5ZMg_I/dev'; // Substitua pela URL do seu aplicativo da web do Apps Script
 
 function fetchInventory() {
     fetch(apiUrl)
