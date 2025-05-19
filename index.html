@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário de Computadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inventário de Computadores do Laboratório</h1>
+
+    <div id="inventory-list">
+        <h2>Lista de Computadores</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Configuração</th>
+                    <th>Localização</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="inventory-table-body">
+                </tbody>
+        </table>
+    </div>
+
+    <div id="add-new-item">
+        <h2>Adicionar Novo Computador</h2>
+        <form id="add-form">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="configuracao">Configuração:</label>
+                <textarea id="configuracao" name="configuracao"></textarea>
+            </div>
+            <div>
+                <label for="localizacao">Localização:</label>
+                <input type="text" id="localizacao" name="localizacao">
+            </div>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Editar Computador</h2>
+            <form id="edit-form">
+                <input type="hidden" id="edit-id" name="id">
+                <div>
+                    <label for="edit-nome">Nome:</label>
+                    <input type="text" id="edit-nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="edit-configuracao">Configuração:</label>
+                    <textarea id="edit-configuracao" name="configuracao"></textarea>
+                </div>
+                <div>
+                    <label for="edit-localizacao">Localização:</label>
+                    <input type="text" id="edit-localizacao" name="localizacao">
+                </div>
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
